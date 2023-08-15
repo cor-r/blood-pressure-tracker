@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Pressure Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div id="header">
+    <h1>Blood Pressure Tracker</h1>
+  </div>
+
+  <div id="chart-full">
+    <canvas id="chart" width="600" height="400"></canvas>
+  </div>
+
+  <button class="manipulate-button" id="new-reading-button" onclick="openModal()">New Reading</button>
+  <button class="manipulate-button" id="random-button" onclick="randomData()">Random Data</button>
+  <button class="manipulate-button" id="reset-button" onclick="resetReadings()">Reset Readings</button>
+
+  <div id="submit-dark"></div>
+  <div id="submit">
+    <input type="number" id="systolic" placeholder="Systolic">
+    <input type="number" id="diastolic" placeholder="Diastolic">
+    <input id="date" type="date">
+    <button id="add" class="form-button" onclick="addElement()">Add</button>
+    <button id="close" class="form-button" onclick="closeModal()">Close</button>
+  </div>
+
+</body>
+
+</html>

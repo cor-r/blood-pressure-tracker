@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(249, 250, 255);
+}
+
+/* Header */
+#header {
+  background-color: rgb(27, 26, 55);
+  width: 100%;
+}
+
+#header h1 {
+  font-size: 2rem;
+  padding: .3em;
+  margin-left: 3%;
+  color: white;
+  font-family: Kanit;
+  display: inline-block;
+  margin: auto;
+
+}
+
+/* Chart */
+#chart-full {
+  margin-top: 40px;
+  width: 100%;
+  height: 500px;
+}
+
+/* Chart Buttons */
+.manipulate-button {
+  font-size: 1.3rem;
+  font-family: Kanit;
+  padding: .3em;
+  border-radius: 5px;
+  margin-top: 1%;
+  margin-left: 1%;
+  border: none;
+  color: white;
+}
+
+#new-reading-button {
+  background-color: rgb(27, 155, 83);
+}
+
+#reset-button {
+  background-color: rgb(241, 96, 63);
+}
+
+#random-button {
+  background-color: rgb(241, 191, 63);
+}
+
+#new-reading-button:hover,
+#reset-button:hover,
+#random-button:hover {
+  cursor: pointer;
+}
+
+
+/* Submission Form */
+#submit-dark {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(3px);
+}
+
+#submit {
+  display: none;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  margin: auto 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  position: absolute;
+  padding: 3em;
+  background-color: rgb(225, 225, 225);
+  opacity: 1;
+}
+
+input {
+  border: none;
+  margin-left: auto;
+  margin-bottom: 30px;
+  background-color: rgb(206, 206, 206);
+  width: 90%;
+
+  padding: 1em;
+  font-size: 1.2rem;
+}
+
+/* Form Buttons */
+.form-button {
+  border: none;
+  border-radius: 10px;
+  padding: 1em 2em;
+  font-size: 1rem;
+  margin-top: 20px;
+  color: white;
+}
+
+#add {
+  background-color: rgb(28, 188, 28);
+}
+
+#close {
+  background-color: rgb(232, 78, 47);
+}
+
+.form-button:hover {
+  cursor: pointer;
+}
